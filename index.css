@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: linear-gradient(to bottom right, rgb(129, 177, 174), rgb(145, 115, 155), rgb(197, 143, 107));
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(190, 174, 174, 0.623);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(24, 20, 12);
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(24, 20, 12);
+    font-size: 2.0em;
+}
+
+#welcome-section p {
+    color: rgb(24, 20, 12);
+    font-size: 1.4em;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.project-grid {
+    display: flex;
+    line-height: 1.5em;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.project-tile {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#tribute {
+    background-image: url("images/26my3vg8q3l01.jpg");
+    background-size: 100%;
+}
+
+#survey {
+    background-image: url("images/austin-distel-nGc5RT2HmF0-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#landing {
+    background-image: url("images/ben-kolde-bs2Ba7t69mM-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+#techdoc {
+    background-image: url("images/photo-1604510298813-9fff51a0e2fc.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+ a {
+    color: rgb(24, 20, 12);
+    font-size: 1.4em;
+    text-decoration: none;
+    width: 100%;
+}
+
+.proj-txt {
+    background-color: rgb(223, 215, 215, 0.6);
+    height: 15%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#techdoc .proj-txt {
+    height: 30%;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 150%;
+    }
+    .project-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+    #techdoc .proj-txt {
+        height: 35%;
+    }
+}
+
+#contact {
+    margin: 10%;
+}
+
+#contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#contact-links img {
+    height: 20px;
+    width: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5%;
+}
